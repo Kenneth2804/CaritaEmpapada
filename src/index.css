@@ -1,0 +1,42 @@
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  font-family: 'Arial', sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.8s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
